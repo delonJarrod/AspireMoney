@@ -1,0 +1,263 @@
+﻿body {
+    padding-top: 5px;
+    padding-bottom: 20px;
+    background-color: rgb(224, 224, 224);
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+/* Header*/
+.header {
+    width: 100%;
+    height: 70px;
+    background-color: white;
+    background-color: rgb(224, 224, 224);
+    /* background-image: linear-gradient(to right, #fb6637 0%, #FF9800 51%, #ff9b08 100%);*/
+}
+
+.headerText {
+    padding-bottom: 10%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: larger;
+    font-weight: 300;
+}
+.headerWidth{
+   
+    margin:auto;
+    width:60%;
+}
+.headerButton {
+    color: white;
+    border: solid 1px;
+    background-image: linear-gradient(to right, #fb6637 0%, #FF9800 51%, #ff9b08 100%);
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    font-size: 15px;
+    border-radius: 20px;
+    width: 100%;
+}
+    .headerButton:hover {
+        color: #ff9b08;
+        border: solid 1px;
+        border-color: #ff9b08;
+        background-image: none;
+        background-color: rgb(224, 224, 224);
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 1%;
+        padding-bottom: 1%;
+        font-size: 15px;
+        border-radius: 20px;
+    }
+
+.bodyBackGround {
+    padding-top: 10%;
+    padding-bottom: 10%;
+    background-color: white;
+}
+
+.logoClass {
+    padding-top: 10px;
+}
+
+.buttonAlign{
+    margin:auto;
+}
+
+.textViewShape {
+    padding: 2%;
+    border: solid 1px;
+    border-color: #ff9b08;
+    border-radius: 10px;
+    margin-top: 5%;
+    width: 100%;
+}
+
+@media (max-width: 400px) {
+    .textViewShape {
+        padding: 2%;
+        border: solid 1px;
+        border-color: dodgerblue;
+        border-radius: 10px;
+        margin-top: 2%;
+        width: 100%;
+    }
+}
+
+
+
+.button {
+    color: white;
+    border: solid 1px;
+    background-image: linear-gradient(to right, #fb6637 0%, #FF9800 51%, #ff9b08 100%);
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    font-size: 15px;
+    border-radius: 20px;
+    width: 100%;
+}
+
+    .button:hover {
+        color: #ff9b08;
+        border: solid 1px;
+        border-color: #ff9b08;
+        background-image: none;
+        background-color: white;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        font-size: 15px;
+        border-radius: 20px;
+    }
+
+
+.Ref {
+    color: white;
+    border: solid 1px;
+    background-image: linear-gradient(to right, #fb6637 0%, #FF9800 51%, #ff9b08 100%);
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    font-size: 15px;
+    border-radius: 50px;
+    width: 20%;
+}
+
+    .Ref:hover {
+        color: #ff9b08;
+        border: solid 1px;
+        border-color: #ff9b08;
+        background-image: none;
+        background-color: white;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 1%;
+        padding-bottom: 1%;
+        font-size: 15px;
+        border-radius: 50px;
+    }
+
+
+
+.cardShape {
+    padding-top: 2%;
+    padding-bottom: 2%;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.6);
+    width: 60%;
+}
+
+    .cardShape:hover {
+        transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    }
+
+
+
+@media (max-width: 400px) {
+    .cardShape {
+        margin:auto;
+        padding: 5%;
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.6);
+        width: 100%;
+    }
+
+        .cardShape:hover {
+            transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+        }
+
+
+    .Ref {
+        color: white;
+        border: solid 1px;
+        background-image: linear-gradient(to right, #fb6637 0%, #FF9800 51%, #ff9b08 100%);
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 1%;
+        padding-bottom: 1%;
+        font-size: 15px;
+        border-radius: 50px;
+        width: 50%;
+    }
+
+        .Ref:hover {
+            color: #ff9b08;
+            border: solid 1px;
+            border-color: #ff9b08;
+            background-image: none;
+            background-color: white;
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-top: 1%;
+            padding-bottom: 1%;
+            font-size: 16px;
+            border-radius: 50px;
+        }
+
+
+
+
+
+}
+
+
+.rangeShape{
+    margin-top:50%;
+}
+
+.rangeShape0 {
+    padding-top: 50%;
+}
+
+
+/* fonts */
+.headingText {
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) var(--unnamed-font-size-20) / var(--unnamed-line-spacing-24) var(--unnamed-font-family-montserrat);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--unnamed-color-394e5d);
+    text-align: left;
+    font: normal normal bold 30px/30px Montserrat;
+    letter-spacing: 0px;
+    color: #394e5d;
+    opacity: 1;
+}
+
+.headingText2 {
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) var(--unnamed-font-size-20) / var(--unnamed-line-spacing-24) var(--unnamed-font-family-montserrat);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--unnamed-color-394e5d);
+    text-align: left;
+    font: normal normal bold 16px/16px Montserrat;
+    letter-spacing: 0px;
+    color: #394e5d;
+    opacity: 1;
+}
+
+.view{
+    margin:auto;
+}

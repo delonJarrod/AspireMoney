@@ -1,0 +1,185 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+
+<div class="pb-5  ">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="text-center p-5 ">
+                    <h2 class=" ">Need Help</h2>
+                    <h2 class=""><b> Finding A Loan? </b></h2>
+                    <div class=" pt-5">
+                        <a class="headerButton text-decoration-none" as="button" href="#form"> Enquire Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="text-center">
+                    <p>Representative Example: Annual Interest Rate (fixed) is 49.7% p.a. with a Representative 49.7% APR, based on borrowing £5,000 and repaying this over 36 monthly payments. Monthly repayment is £243.57 with a total amount repayable of £8,768.52 which includes the total interest payable of £3,768.52.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row bodyBackGround">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12 col-md-6 pb-5">
+                <div>
+                    <h1 data-aos="fade-down" class="headingText">Instant Approval For Car</h1>
+                    <h1 data-aos="fade-up" class="headingText2">Lowest Interest Rates - Calculate EMI - Check Eligibility - Instant e- Approval - Special Offers</h1>
+                    <h1 data-aos="fade-up" class="headingText2">
+                        <b>7.25%</b> for <b>New</b> cars
+                    </h1>
+                    <h1 data-aos="fade-up" class="headingText2">
+                        <b>8.30%</b> for <b>Old</b> cars
+                    </h1>
+                </div>
+
+                <div class="pt-5">
+                    <h1 data-aos="fade-up" class="headingText">Why Aspire Money?</h1>
+                    <h1 data-aos="fade-up" class="headingText2">Since 2010, Aspire Money has helped people across the UK find affordable loans to suit their individual circumstances.</h1>
+                    <h1 data-aos="fade-up" class="headingText2">We make the process of applying for finance as simple and straightforward as possible, and each month, we help thousands of people narrow down the options available to find the best loan for their needs.</h1>
+                </div>
+                <div class="pt-5">
+                    <h1 data-aos="fade-up" class="headingText">Lenders On Our Panel</h1>
+                    <h1 data-aos="fade-up" class="headingText2">
+                        Our growing panel of lenders can assist customers of all credit types, from those with
+                        bad or poor credit history to excellent credit ratings.
+                    </h1>
+                </div>
+
+            </div>
+            <form class="col-sm-12 col-md-6" id="form">
+                <div class="cardShape">
+                    <div class=" text-center">
+                        <div class="card-body">
+                            <div class="pb-5">
+                                <h3> REQUEST QUOTE NOW</h3>
+                                <p>Easy to apply for a loan with us. Once you have completed this form</p>
+                            </div>
+                            <div>
+                                <lable class="text-danger" value="" id="checkTextID"></lable>
+                            </div>
+                            <form onsubmit="onClickPost()">
+                                <div class="form-group">
+                                    <label for="nameID">Name</label>
+                                    <input id="nameID" placeholder="Enter Name" value="" name="nameID" class="textViewShape" onchange="nameOnChange(this.value)" required />
+                                </div>
+                                <div class="form-group">
+                                    <label for="emailID">Email address</label>
+                                    <input type="email" id="emailID" placeholder="Enter E-Mail" value="" name="nameID" class="textViewShape" onchange="emailOnChange(this.value)" required />
+                                </div>
+                                <div class="form-group">
+                                    <label for="phoneID">Phone Number</label>
+                                    <input type="number" id="phoneID" placeholder="Enter Phone No." value="" name="nameID" class="textViewShape" onchange="phoneOnChange(this.value)" required />
+                                </div>
+                                <div class="form-group">
+                                    <label for="cityID">Name Of City</label>
+                                    <input type="text" id="cityID" placeholder="Enter City Name" value="" name="nameID" class="textViewShape" onchange="cityOnChange(this.value)" required />
+                                </div>
+                                <div class="form-group">
+                                    <label for="codeID">Name Of City</label>
+                                    <input type="number" id="codeID" placeholder="Enter Zip Code" value="" name="nameID" class="textViewShape" onchange="codeOnChange(this.value)" required />
+                                </div>
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="row rangeShape">
+                                                <div class="col ">
+                                                    <label value="">Amount:</label>
+                                                </div>
+                                                <div class="col">
+                                                    <em>
+                                                        <lable value="" id="demo">0</lable>
+                                                    </em>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <input type="range" min="12500" max="50000" value="25000" class="form-range rangeShape" id="customRange1">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="pt-5">
+                                    <button class="button" type="submit" onclick="onClickPost()" > Send Request</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+    </div>
+</div>
+<div class="row text-center p-5">
+    <div class="row">
+        <div class="col">
+            <div class="pt-5">
+                <button class="Ref" type="button" onclick="apiTest()">Refresh</button>
+            </div>
+        </div>
+    </div>
+    <div class="view">
+        <div class="col">
+            <div class="container" style="overflow-x:auto;">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Phone</th>
+                            <th>Code</th>
+                            <th>City</th>
+                            <th>Range</th>
+                            <th>ID</th>
+                            <th>Edit</th>
+                            <th>Delete</th>
+                        </tr>
+                    </thead>
+                    <tbody id="data">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Edit A Name</h5>
+            </div>
+            <div class="modal-body">
+                <div>
+                    <input id="upDateNameID" placeholder="Update Name" value="" name="updateName" class="textViewShape" onchange="upDateOnChange(this.value)" required />
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" onclick="modalUpdate()">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Delete</h5>
+            </div>
+            <div class="modal-body text-center">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-danger" onclick="deleteModal(event)">Delete</button>
+            </div>
+        </div>
+    </div>
+</div>
